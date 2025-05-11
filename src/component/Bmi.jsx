@@ -42,7 +42,10 @@ function Bmi() {
 
   // reload function
   let reload = () => {
-    window.location.reload();
+    setWeight('');
+    setFeet('');
+    setInches('');
+    setBmi('');
   };
 
   return (
@@ -82,7 +85,7 @@ function Bmi() {
               Submit
             </button>
             <button className="btn btn-outline" onClick={reload} type="button">
-              Reload
+              Reset
             </button>
           </div>
           <div>
