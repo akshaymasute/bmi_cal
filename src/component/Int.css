@@ -1,0 +1,133 @@
+:root{
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #202020; /* Dark background */
+  color: #ffffff; /* Light text for contrast */
+}
+
+.result {
+  margin: 10px;
+  padding: 10px;
+  background-color: #2c2c2c; /* Darker background for results */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3 );
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00d4ff; /* Attractive accent color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+input {
+  
+  width: 50%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2c2c2c; /* Dark input background */
+  color: #ffffff; /* Light text */
+}
+
+input::placeholder {
+  color: #aaaaaa; /* Subtle placeholder color */
+}
+
+button {
+  margin: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #121212;
+  background-color: #00d4ff; /* Accent color for buttons */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+button:hover {
+  background-color: #00a3cc; /* Darker shade on hover */
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #00d4ff;
+  border: 2px solid #00d4ff;
+}
+
+.btn-outline:hover {
+  background-color: #00d4ff;
+  color: #121212;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #00ff88; /* Green accent for results */
+}
+
+p {
+  font-size: 10px;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .Container {
+    max-width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Container {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+
+  input, button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+
+  p {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+}
